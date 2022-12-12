@@ -143,6 +143,10 @@ body{
     transition: all .9s;
 }
 
+.contacts{
+    margin-bottom: 20px;
+}
+
 .contacts:hover .container{
     max-width: 600px;
 }
@@ -186,5 +190,47 @@ body{
 .contacts__text{
     margin-top: 0;
     margin-bottom: 30px;
+    transition: all .9s;
+    font-size: 20px;
+}
+
+.skills:hover .container{
+    max-width: 600px;
+}
+
+.skills__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8b00ff;
+}
+
+.skills__inner:hover .skills__title{
+    color: #ff8597;
+}
+
+.skills__inner:hover .skills__text{
+    color: #ffc0cb;
+}
+
+.skills__title{
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+
+.skills__list{
+    list-style: none;
+}
+
+.skills__list-item{
+    display: flex;
+    align-items: center;
+}
+
+.skills__text{
+    margin-left: 5px;
+    font-size: 20px;
     transition: all .9s;
 }
