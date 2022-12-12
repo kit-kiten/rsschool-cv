@@ -17,6 +17,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
+    transition: all .8s;
 }
 
 .header{
@@ -88,6 +89,10 @@ body{
     font-size: 26px;
 }
 
+.about{
+    margin-bottom: 20px;
+}
+
 .about__inner{
     background-color: #8b00ff;
     padding: 5px;
@@ -135,5 +140,51 @@ body{
 .about__text{
     max-width: 600px;
     font-size: 20px;
+    transition: all .9s;
+}
+
+.contacts:hover .container{
+    max-width: 600px;
+}
+
+.contacts__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8b00ff;
+}
+
+.contacts__inner:hover .contacts__title{
+    color: #ff8597;
+}
+
+.contacts__inner:hover .contacts__text{
+    color: #ffc0cb;
+}
+
+.contacts__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contacts__list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .6s;
+}
+
+.contacts__text{
+    margin-top: 0;
+    margin-bottom: 30px;
     transition: all .9s;
 }
