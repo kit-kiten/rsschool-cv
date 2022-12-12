@@ -10,12 +10,17 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffc0cb;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container{
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.header{
+    margin-bottom: 20px;
 }
 
 .header__nav{
@@ -43,4 +48,38 @@ body{
 
 .header__list-link:hover{
     color: #fa6055;
+}
+
+.profile__inner{
+    display: flex;
+    background-color: #8b00ff;
+    padding: 5px;
+}
+
+.profile__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile__title{
+    text-transform: uppercase;
+    transition: all .6s;
+    font-size: 40px;
+}
+
+.profile__inner:hover .profile__title{
+    color: #ffc0cb;
+}
+
+.profile__inner:hover .profile__subtitle{
+    color: #ffc0cb;
+}
+
+.profile__subtitle{
+    text-transform: uppercase;
+    transition: all .9s;
+    font-size: 26px;
 }
