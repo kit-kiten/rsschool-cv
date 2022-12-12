@@ -50,6 +50,10 @@ body{
     color: #fa6055;
 }
 
+.profile{
+    margin-bottom: 20px;
+}
+
 .profile__inner{
     display: flex;
     background-color: #8b00ff;
@@ -71,7 +75,7 @@ body{
 }
 
 .profile__inner:hover .profile__title{
-    color: #ffc0cb;
+    color: #ff8597;
 }
 
 .profile__inner:hover .profile__subtitle{
@@ -82,4 +86,54 @@ body{
     text-transform: uppercase;
     transition: all .9s;
     font-size: 26px;
+}
+
+.about__inner{
+    background-color: #8b00ff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about__inner:hover .about__title{
+    color: #ff8597;
+}
+
+.about__inner:hover .about__text{
+    color: #ffc0cb;
+}
+
+.about__inner::before{
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url('./img/icons/music.png');
+    left: 125px;
+    top: 80px;
+}
+
+.about__inner::after{
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url('./img/icons/guitar.png');
+    right: 125px;
+    top: 80px;
+}
+
+.about__title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .6s;
+}
+
+.about__text{
+    max-width: 600px;
+    font-size: 20px;
+    transition: all .9s;
 }
