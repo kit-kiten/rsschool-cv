@@ -194,6 +194,10 @@ body{
     font-size: 20px;
 }
 
+.skills{
+    margin-bottom: 20px;
+}
+
 .skills:hover .container{
     max-width: 600px;
 }
@@ -233,4 +237,46 @@ body{
     margin-left: 5px;
     font-size: 20px;
     transition: all .9s;
+}
+
+.codeExample{
+    margin-bottom: 20px;
+}
+
+.codeExample__inner{
+    background-color: #8b00ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.codeExample__inner:hover .codeExample__title{
+    color: #ff8597;
+}
+
+.codeExample__inner:hover .codeExample__text{
+    color: #ffc0cb;
+}
+
+
+.codeExample__title{
+    margin-top: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+
+.codeExample__text{
+    font-size: 20px;
+    transition: all .9s;
+}
+
+.codeExample__code{
+    font-size: 14px;
+    max-width: 500px;;
+    color: #fa6055;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
 }
