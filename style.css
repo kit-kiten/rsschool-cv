@@ -259,6 +259,10 @@ body{
     color: #ffc0cb;
 }
 
+.codeExample__inner:hover .codeExample__code{
+    padding: 20px;
+}
+
 
 .codeExample__title{
     margin-top: 0;
@@ -279,4 +283,5 @@ body{
     border: 1px solid #000;
     padding: 10px;
     border-radius: 5px;
+    transition: all .5s;
 }
