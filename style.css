@@ -1,6 +1,10 @@
-* {
+*{
     box-sizing: border-box;
-  }
+}
+
+html {
+    scroll-behavior: smooth; 
+}
 
 body{
     min-height: 100vh;
@@ -478,3 +482,46 @@ body{
     top: -4px;
 }
 
+.footer{
+    margin-bottom: 20px;
+}
+
+.footer__rsschool-img{
+    width: 80px;
+    height: 30px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b00ff;
+    padding: 10px;
+}
+
+.footer__inner:hover .footer__copyright{
+    color: #ff8597;
+}
+
+.footer__github{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__github:hover .footer__text{
+    color: #fa6055;
+}
+
+.footer__text{
+    margin-left: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all .7s;
+}
+
+.footer__copyright{
+    font-size: 18px;
+    transition: all .7s;
+}
