@@ -308,7 +308,6 @@ body{
 }
 
 .experience__title{
-    text-transform: uppercase;
     font-size: 30px;
     text-transform: uppercase;
     transition: all .6s;
@@ -362,3 +361,120 @@ body{
 .experience__technologies-item + .experience__technologies-item{
     margin-left: 25px;
 }
+
+.education{
+    margin-bottom: 20px;
+}
+
+.education__inner{
+    background-color: #8b00ff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education__inner:hover .education__title{
+    color: #ff8597;
+}
+
+.education__inner:hover .education__subtitle{
+    color: #ffc0cb;
+}
+
+.education__inner:hover .education__text,
+.education__inner:hover .education__list-item{
+    color: #fa6055;
+}
+
+.education:hover .container{
+    max-width: 600px;
+}
+
+.education__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+    margin-top: 0;
+    text-align: center;
+}
+
+.education__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ff8597;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.education__box + .education__box{
+    margin-top: 20px;
+}
+
+.education__subtitle{
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: all .9s;
+}
+
+.education__subtitle--university{
+    position: relative;
+    padding-left: 40px;
+}
+
+.education__subtitle--university::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/university.png');
+    left: 0px;
+    top: -2px;
+}
+
+.education__text{
+    font-size: 18px;
+    transition: all .9s;
+}
+
+.education__list{
+    list-style: none;
+    padding: 0;
+}
+
+.education__list-item{
+    font-size: 18px;
+    transition: all .9s;
+}
+
+.education__list-item + .education__list-item{
+    margin-top: 25px;
+}
+
+.education__list-item{
+    position: relative;
+    padding-left: 40px;
+}
+
+.education__list-item--english::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/english.png');
+    left: 0;
+    top: -4px;
+}
+
+.education__list-item--russian::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/russian.png');
+    left: 0;
+    top: -4px;
+}
+
