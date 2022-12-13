@@ -1,0 +1,527 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffc0cb;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    transition: all .8s;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.header__nav{
+    background-color: #8b00ff;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.header__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__list-item + .header__list-item{
+    margin-left: 30px;
+}
+
+.header__list-link{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.header__list-link:hover{
+    color: #fa6055;
+}
+
+.profile{
+    margin-bottom: 20px;
+}
+
+.profile__inner{
+    display: flex;
+    background-color: #8b00ff;
+    padding: 5px;
+}
+
+.profile__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile__title{
+    text-transform: uppercase;
+    transition: all .6s;
+    font-size: 40px;
+}
+
+.profile__inner:hover .profile__title{
+    color: #ff8597;
+}
+
+.profile__inner:hover .profile__subtitle{
+    color: #ffc0cb;
+}
+
+.profile__subtitle{
+    text-transform: uppercase;
+    transition: all .9s;
+    font-size: 26px;
+}
+
+.about{
+    margin-bottom: 20px;
+}
+
+.about__inner{
+    background-color: #8b00ff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about__inner:hover .about__title{
+    color: #ff8597;
+}
+
+.about__inner:hover .about__text{
+    color: #ffc0cb;
+}
+
+.about__inner::before{
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url('./img/icons/music.png');
+    left: 125px;
+    top: 80px;
+}
+
+.about__inner::after{
+    content: '';
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background-image: url('./img/icons/guitar.png');
+    right: 125px;
+    top: 80px;
+}
+
+.about__title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .6s;
+}
+
+.about__text{
+    max-width: 600px;
+    font-size: 20px;
+    transition: all .9s;
+}
+
+.contacts{
+    margin-bottom: 20px;
+}
+
+.contacts:hover .container{
+    max-width: 600px;
+}
+
+.contacts__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8b00ff;
+}
+
+.contacts__inner:hover .contacts__title{
+    color: #ff8597;
+}
+
+.contacts__inner:hover .contacts__text{
+    color: #ffc0cb;
+}
+
+.contacts__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contacts__list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: all .6s;
+}
+
+.contacts__text{
+    margin-top: 0;
+    margin-bottom: 30px;
+    transition: all .9s;
+    font-size: 20px;
+}
+
+.skills{
+    margin-bottom: 20px;
+}
+
+.skills:hover .container{
+    max-width: 600px;
+}
+
+.skills__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8b00ff;
+}
+
+.skills__inner:hover .skills__title{
+    color: #ff8597;
+}
+
+.skills__inner:hover .skills__text{
+    color: #ffc0cb;
+}
+
+.skills__title{
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+
+.skills__list{
+    list-style: none;
+}
+
+.skills__list-item{
+    display: flex;
+    align-items: center;
+}
+
+.skills__text{
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all .9s;
+}
+
+.codeExample{
+    margin-bottom: 20px;
+}
+
+.codeExample__inner{
+    background-color: #8b00ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.codeExample__inner:hover .codeExample__title{
+    color: #ff8597;
+}
+
+.codeExample__inner:hover .codeExample__text{
+    color: #ffc0cb;
+}
+
+.codeExample__inner:hover .codeExample__code{
+    padding: 20px;
+}
+
+
+.codeExample__title{
+    margin-top: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+
+.codeExample__text{
+    font-size: 20px;
+    transition: all .9s;
+}
+
+.codeExample__code{
+    font-size: 14px;
+    max-width: 500px;;
+    color: #fa6055;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.experience{
+    margin-bottom: 20px;
+}
+
+.experience__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8b00ff;
+    padding: 30px 0;
+}
+
+.experience__wrapper:hover .experience__title{
+    color: #ff8597;
+}
+
+.experience__wrapper:hover .experience__list-title{
+    color: #ffc0cb;
+    font-size: 24px;
+}
+
+.experience__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+    margin-top: 0;
+}
+
+.experience__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 -30px;
+    padding: 0;
+}
+
+.experience__list-item{
+    margin: 0 30px;
+}
+
+.experience__list-item:hover .experience__list-subtitle{
+    color: #fa6055;
+    font-size: 20px;
+}
+
+.experience__img{
+    transition: all .9s;
+}
+
+.experience__list-item:hover .experience__img{
+    transform: scale(1.1);
+    filter: brightness(70%)
+}
+
+.experience__list-title{
+    text-align: center;
+    transition: all .9s;
+    margin: 20px 0 0;
+    text-transform: uppercase;
+}
+
+.experience__list-subtitle{
+    text-transform: uppercase;
+    transition: all .7s;
+}
+
+.experience__technologies{
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.experience__technologies-item + .experience__technologies-item{
+    margin-left: 25px;
+}
+
+.education{
+    margin-bottom: 20px;
+}
+
+.education__inner{
+    background-color: #8b00ff;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education__inner:hover .education__title{
+    color: #ff8597;
+}
+
+.education__inner:hover .education__subtitle{
+    color: #ffc0cb;
+}
+
+.education__inner:hover .education__text,
+.education__inner:hover .education__list-item{
+    color: #fa6055;
+}
+
+.education:hover .container{
+    max-width: 600px;
+}
+
+.education__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .6s;
+    margin-top: 0;
+    text-align: center;
+}
+
+.education__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ff8597;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.education__box + .education__box{
+    margin-top: 20px;
+}
+
+.education__subtitle{
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: all .9s;
+}
+
+.education__subtitle--university{
+    position: relative;
+    padding-left: 40px;
+}
+
+.education__subtitle--university::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/university.png');
+    left: 0px;
+    top: -2px;
+}
+
+.education__text{
+    font-size: 18px;
+    transition: all .9s;
+}
+
+.education__list{
+    list-style: none;
+    padding: 0;
+}
+
+.education__list-item{
+    font-size: 18px;
+    transition: all .9s;
+}
+
+.education__list-item + .education__list-item{
+    margin-top: 25px;
+}
+
+.education__list-item{
+    position: relative;
+    padding-left: 40px;
+}
+
+.education__list-item--english::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/english.png');
+    left: 0;
+    top: -4px;
+}
+
+.education__list-item--russian::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/icons/russian.png');
+    left: 0;
+    top: -4px;
+}
+
+.footer{
+    margin-bottom: 20px;
+}
+
+.footer__rsschool-img{
+    width: 80px;
+    height: 30px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b00ff;
+    padding: 10px;
+}
+
+.footer__inner:hover .footer__copyright{
+    color: #ff8597;
+}
+
+.footer__github{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer__github:hover .footer__text{
+    color: #fa6055;
+}
+
+.footer__text{
+    margin-left: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all .7s;
+}
+
+.footer__copyright{
+    font-size: 18px;
+    transition: all .7s;
+}
