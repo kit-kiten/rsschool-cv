@@ -10,3 +10,13 @@ I like music
 # Skills
 * HTML5
 * CSS
+
+# Code
+
+# Experience
+
+# Education
+MSU Admiral Nevelsky's
+
+# Languages
+English: A1
